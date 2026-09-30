@@ -67,6 +67,22 @@ export interface DemoEvent {
   stateSnapshot?: string;
 }
 
+export interface LearningStep {
+  id: string;
+  title: string;
+  explanation: string;
+  codeLine?: number;
+  operation: string;
+  stateBefore?: string;
+  stateAfter?: string;
+  render?: string;
+  component?: string;
+  effect?: string;
+  dom?: string;
+  why: string;
+  next: string;
+}
+
 export interface Customer {
   id: number;
   name: string;
